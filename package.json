@@ -1,0 +1,21 @@
+{
+  "name": "mail-tickets",
+  "version": "1.0.0",
+  "description": "Relève une boîte IMAP, analyse chaque mail avec Claude et crée un ticket dans FileMaker",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "once": "node src/index.js --once",
+    "check": "node src/index.js --check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "imapflow": "^1.0.0",
+    "mailparser": "^3.7.0",
+    "nodemailer": "^6.9.0"
+  }
+}
